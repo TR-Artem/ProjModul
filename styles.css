@@ -1,0 +1,132 @@
+/* Основные стили */
+QMainWindow {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+QWidget {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Заголовок */
+QLabel#title_label {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bb86fc;
+    padding: 15px;
+}
+
+/* Выпадающие списки */
+QComboBox {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 250px;
+}
+
+QComboBox:hover {
+    border: 1px solid #555;
+}
+
+QComboBox::drop-down {
+    width: 20px;
+    border-left: 1px solid #444;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    selection-background-color: #3a3a3a;
+    outline: none;
+}
+
+/* Кнопки */
+QPushButton {
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    min-width: 150px;
+}
+
+QPushButton:hover {
+    background-color: #1565c0;
+}
+
+QPushButton:pressed {
+    background-color: #0a3570;
+}
+
+QPushButton#recommendButton {
+    background-color: #bb86fc;
+    color: #000000;
+    font-size: 16px;
+    padding: 12px 24px;
+}
+
+QPushButton#detailsButton {
+    background-color: #333;
+    color: #e0e0e0;
+    min-width: 100px;
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+/* Список рекомендаций */
+QListWidget {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+QListWidget::item {
+    height: 200px;
+}
+
+/* Элементы книг */
+QLabel#bookTitle {
+    font-size: 16px;
+    color: #bb86fc;
+    font-weight: bold;
+}
+
+/* Слайдер */
+QSlider::groove:horizontal {
+    height: 8px;
+    background: #444;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    margin: -6px 0;
+    border-radius: 10px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #0d47a1;
+    border-radius: 4px;
+}
+
+/* Окно с деталями */
+BookDetailsWindow {
+    background-color: #1e1e1e;
+}
+
+BookDetailsWindow QLabel {
+    font-size: 14px;
+}
+
+BookDetailsWindow QScrollArea {
+    border: none;
+}
